@@ -4,3 +4,10 @@ describe('newPlayer', function () {
 		expect(testPlayer.userName).to.equal("Beth");
 	});
 });
+
+describe('Roll', function() {
+    it("returns a random number between 1 and 6", function() {
+        var testTurn = new Roll();
+        expect(testTurn.activePlayer()).to.be.within(1, 6);
+    });
+});
